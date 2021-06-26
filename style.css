@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+  --LightPink: hsl(321, 100%, 78%);
+}
+
+.pad {
+  padding: 50px;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+}
+
+/* header */
+
+header {
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--VeryPaleCyan);
+}
+
+.logo {
+  width: 100%;
+}
+
+.try {
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 20px;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+}
+
+.try:hover {
+  color: rgb(156, 153, 153);
+}
+
+.get {
+  padding: 10px 35px;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--Pink);
+  outline: none;
+}
+
+.get:hover {
+  color: white !important;
+  background-color: var(--LightPink) !important;
+  border: 1px solid var(--LightPink) !important;
+}
+
+/* section-2 */
+
+.grow .cuk {
+  margin: auto;
+}
+
+/* section-3 */
+.flow .cuk {
+  margin: auto;
+}
+
+/* section-4 */
+.users .cuk {
+  margin: auto;
+}
+
+/* section-5 */
+.ready {
+  background: linear-gradient(180deg, white 50%, var(--VeryDarkCyan) 50%);
+}
+
+.card {
+  width: 65%;
+  margin: auto;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin-bottom: 30px;
+}
+
+/* footer */
+.footer {
+  background-color: var(--VeryDarkCyan);
+  color: white;
+}
+
+.row .bot {
+  width: 15%;
+  display: block;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.lin li a {
+  color: white;
+  text-decoration: none;
+}
+
+.lin li a:hover {
+  font-weight: 700;
+}
+
+.sosmed {
+  display: flex;
+}
+.sosmed li {
+  display: block;
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.sosmed li:hover {
+  color: hsl(176, 68%, 64%);
+  border: 1px solid hsl(176, 68%, 64%);
+}
+
+.footer .copy {
+  margin-top: 20px;
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 70%;
+  }
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .navbar .container {
+    padding: 10px;
+  }
+  .try {
+    font-size: 12px;
+  }
+  .community {
+    text-align: center;
+  }
+  .community h1,
+  p,
+  button {
+    margin-bottom: 20px;
+  }
+
+  /* section-2-3-4 */
+  .grow,
+  .flow,
+  .users {
+    text-align: center;
+  }
+
+  .grow p,
+  .flow p,
+  .users p {
+    font-size: 12px;
+  }
+
+  .grow h2,
+  .flow h2,
+  .users h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* section-5 */
+  .card {
+    padding: 5px 0;
+    width: auto;
+  }
+  .card h2 {
+    font-size: 18px;
+  }
+  .card button {
+    font-size: 12px;
+  }
+  /* footer */
+  .row .bot {
+    width: 70%;
+  }
+  .sosmed {
+    justify-content: center;
+  }
+  .footer .copy {
+    text-align: center;
+  }
+}
